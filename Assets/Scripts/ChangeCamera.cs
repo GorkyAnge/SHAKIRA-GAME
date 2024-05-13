@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ChangeCamera : MonoBehaviour
+{
+    [SerializeField] Transform newScene;
+    [SerializeField] Transform prevScene;
+    [SerializeField] private CameraMovement cameraMovement;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            //if(collision.transform.position.x > transform.position.x)
+            //    cameraMovement.MoveToNextPosition(newScene);
+            //else
+            //    cameraMovement.MoveToNextPosition(prevScene);
+        }
+    }
+}
+
+
